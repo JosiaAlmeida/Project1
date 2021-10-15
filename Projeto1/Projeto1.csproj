@@ -53,6 +53,42 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulario\Atualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Atualizar.Designer.cs">
+      <DependentUpon>Atualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Consultar.Designer.cs">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Estatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Estatistica.Designer.cs">
+      <DependentUpon>Estatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Inscrever.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Inscrever.Designer.cs">
+      <DependentUpon>Inscrever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Integrantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Integrantes.Designer.cs">
+      <DependentUpon>Integrantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Listar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Listar.Designer.cs">
+      <DependentUpon>Listar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
