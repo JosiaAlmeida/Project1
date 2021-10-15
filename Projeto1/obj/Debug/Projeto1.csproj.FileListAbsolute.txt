@@ -1,0 +1,20 @@
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\bin\Debug\Projeto1.exe.config
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\bin\Debug\Projeto1.exe
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\bin\Debug\Projeto1.pdb
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.AssemblyReference.cache
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.Form1.resources
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.Properties.Resources.resources
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.GenerateResource.cache
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.CoreCompileInputs.cache
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.exe
+C:\Users\ALMEIDA\Documents\Data base JA, Dont click here please\Projeto1\Projeto1\obj\Debug\Projeto1.pdb
+E:\Projeto1\Projeto1\bin\Debug\Projeto1.exe.config
+E:\Projeto1\Projeto1\bin\Debug\Projeto1.exe
+E:\Projeto1\Projeto1\bin\Debug\Projeto1.pdb
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.AssemblyReference.cache
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.Form1.resources
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.Properties.Resources.resources
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.GenerateResource.cache
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.CoreCompileInputs.cache
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.exe
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.pdb
