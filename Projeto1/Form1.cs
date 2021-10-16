@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Projeto1.classes;
 using Projeto1.Formulario;
 
 namespace Projeto1

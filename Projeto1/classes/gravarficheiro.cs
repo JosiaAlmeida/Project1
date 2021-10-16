@@ -13,5 +13,14 @@ namespace Projeto1.classes
         {
            StreamWriter ficheiro = new StreamWriter(@".\file.txt", true, Encoding.Default);
         }
+        public void RecordFilesInscritos(List<string> inscrever)
+        {
+            StreamWriter ficheiro = new StreamWriter(@".\file.txt", true, Encoding.Default);
+            foreach (var item in inscrever)
+            {
+                ficheiro.WriteLine(item);
+            }
+            ficheiro.Dispose();
+        }
     }
 }

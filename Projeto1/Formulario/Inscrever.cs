@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto1.classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,32 @@ namespace Projeto1.Formulario
         public Inscrever()
         {
             InitializeComponent();
+        }
+
+        private void Inscrever_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inscreverbtn_Click(object sender, EventArgs e)
+        {
+            InscreverClass inscrever = new InscreverClass();
+            inscrever.inscreve(nametxt.Text, lastNametxt.Text, cursotxt.Text, "12", "Masculino");
         }
     }
 }
