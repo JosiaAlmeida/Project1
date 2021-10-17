@@ -9,6 +9,14 @@ namespace Projeto1.classes
 {
     public class gravarficheiro
     {
+        protected long id { get; set; }
+        public gravarficheiro()
+        {
+            StreamReader streamread = new StreamReader(@".\file.txt");
+            var textStream = streamread.ReadToEnd();
+            this.id = textStream.Length;
+            streamread.Dispose();
+        }
         public void RecordFile()
         {
            StreamWriter ficheiro = new StreamWriter(@".\file.txt", true, Encoding.Default);
@@ -16,21 +24,9 @@ namespace Projeto1.classes
         public void RecordFilesInscritos(List<string> inscrever)
         {
             var path = @".\file.txt";
-            //ConvertId _id = new ConvertId();
-            //StreamReader streamread = new StreamReader(path);
-            //var textStream = streamread.ReadToEnd();
-            //streamread.Dispose();
-
+            ConvertId _id = new ConvertId();
             StreamWriter ficheiro = new StreamWriter(path, true, Encoding.Default);
-            //if (!textStream.Equals("") || textStream !=" " || textStream != null)
-            //{
-                //string id = split[0];
-                //ficheiro.Write((_id.IDVerific(id) + 1) + " ");
-            //}else
-            //{
-           //     string id = "0 ";
-           //     ficheiro.Write("1 ");
-           // }
+            ficheiro.Write((_id.IDVerific(id.ToString()) + 1) + " ");
             foreach (var item in inscrever)
             {
                 ficheiro.Write(item +" ");

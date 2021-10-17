@@ -41,13 +41,8 @@ namespace Projeto1.Formulario
 
         private void inscreverbtn_Click(object sender, EventArgs e)
         {
-
-            var path = @".\file.txt";
             InscreverClass inscrever = new InscreverClass();
             inscrever.inscreve(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text);
-            StreamReader stream = new StreamReader(path);
-            resultlb.Text = stream.ReadToEnd();
-            stream.Dispose();
         }
     }
 }
