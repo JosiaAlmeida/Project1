@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Projeto1.Formulario
 {
@@ -40,8 +41,13 @@ namespace Projeto1.Formulario
 
         private void inscreverbtn_Click(object sender, EventArgs e)
         {
+
+            var path = @".\file.txt";
             InscreverClass inscrever = new InscreverClass();
-            inscrever.inscreve(nametxt.Text, lastNametxt.Text, cursotxt.Text, "12", "Masculino");
+            inscrever.inscreve(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text);
+            StreamReader stream = new StreamReader(path);
+            resultlb.Text = stream.ReadToEnd();
+            stream.Dispose();
         }
     }
 }

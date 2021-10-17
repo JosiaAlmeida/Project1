@@ -31,8 +31,6 @@ namespace Projeto1.Formulario
         {
             this.inscreverbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.MasculinoCB = new System.Windows.Forms.CheckBox();
-            this.FemininoCB = new System.Windows.Forms.CheckBox();
             this.nametxt = new System.Windows.Forms.TextBox();
             this.cursotxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +40,8 @@ namespace Projeto1.Formulario
             this.label4 = new System.Windows.Forms.Label();
             this.lastNametxt = new System.Windows.Forms.TextBox();
             this.apelido = new System.Windows.Forms.Label();
+            this.sexoDUP = new System.Windows.Forms.DomainUpDown();
+            this.resultlb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // inscreverbtn
@@ -64,28 +64,6 @@ namespace Projeto1.Formulario
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // MasculinoCB
-            // 
-            this.MasculinoCB.AutoSize = true;
-            this.MasculinoCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MasculinoCB.Location = new System.Drawing.Point(16, 224);
-            this.MasculinoCB.Name = "MasculinoCB";
-            this.MasculinoCB.Size = new System.Drawing.Size(99, 24);
-            this.MasculinoCB.TabIndex = 2;
-            this.MasculinoCB.Text = "Masculino";
-            this.MasculinoCB.UseVisualStyleBackColor = true;
-            // 
-            // FemininoCB
-            // 
-            this.FemininoCB.AutoSize = true;
-            this.FemininoCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FemininoCB.Location = new System.Drawing.Point(125, 224);
-            this.FemininoCB.Name = "FemininoCB";
-            this.FemininoCB.Size = new System.Drawing.Size(99, 24);
-            this.FemininoCB.TabIndex = 3;
-            this.FemininoCB.Text = "Femenino";
-            this.FemininoCB.UseVisualStyleBackColor = true;
             // 
             // nametxt
             // 
@@ -147,7 +125,7 @@ namespace Projeto1.Formulario
             this.idadeDUP.Name = "idadeDUP";
             this.idadeDUP.Size = new System.Drawing.Size(174, 20);
             this.idadeDUP.TabIndex = 9;
-            this.idadeDUP.Text = "Idade";
+            this.idadeDUP.Text = "12";
             // 
             // label4
             // 
@@ -178,11 +156,32 @@ namespace Projeto1.Formulario
             this.apelido.TabIndex = 11;
             this.apelido.Text = "Apelido";
             // 
+            // sexoDUP
+            // 
+            this.sexoDUP.Items.Add("Masculino");
+            this.sexoDUP.Items.Add("Femenino");
+            this.sexoDUP.Location = new System.Drawing.Point(16, 225);
+            this.sexoDUP.Name = "sexoDUP";
+            this.sexoDUP.Size = new System.Drawing.Size(174, 20);
+            this.sexoDUP.TabIndex = 13;
+            this.sexoDUP.Text = "Masculino";
+            // 
+            // resultlb
+            // 
+            this.resultlb.AutoSize = true;
+            this.resultlb.Location = new System.Drawing.Point(229, 225);
+            this.resultlb.Name = "resultlb";
+            this.resultlb.Size = new System.Drawing.Size(16, 13);
+            this.resultlb.TabIndex = 14;
+            this.resultlb.Text = "...";
+            // 
             // Inscrever
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 327);
+            this.Controls.Add(this.resultlb);
+            this.Controls.Add(this.sexoDUP);
             this.Controls.Add(this.lastNametxt);
             this.Controls.Add(this.apelido);
             this.Controls.Add(this.label4);
@@ -192,8 +191,6 @@ namespace Projeto1.Formulario
             this.Controls.Add(this.cursotxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nametxt);
-            this.Controls.Add(this.FemininoCB);
-            this.Controls.Add(this.MasculinoCB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inscreverbtn);
             this.Name = "Inscrever";
@@ -208,8 +205,6 @@ namespace Projeto1.Formulario
 
         private System.Windows.Forms.Button inscreverbtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox MasculinoCB;
-        private System.Windows.Forms.CheckBox FemininoCB;
         private System.Windows.Forms.TextBox nametxt;
         private System.Windows.Forms.TextBox cursotxt;
         private System.Windows.Forms.Label label2;
@@ -219,5 +214,7 @@ namespace Projeto1.Formulario
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox lastNametxt;
         private System.Windows.Forms.Label apelido;
+        private System.Windows.Forms.DomainUpDown sexoDUP;
+        private System.Windows.Forms.Label resultlb;
     }
 }
