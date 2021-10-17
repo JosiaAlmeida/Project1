@@ -8,12 +8,13 @@ namespace Projeto1.classes
 {
     public class InscreverClass
     {
-        public void inscreve(string name, string lasname, string curso, string sexo, string numeBi)
+        public void inscreve(string name, string lasname, string curso, string idade, string sexo, string numeBi)
         {
             List<string> candidatoData = new List<string>();
             candidatoData.Add(name);
             candidatoData.Add(lasname);
             candidatoData.Add(curso);
+            candidatoData.Add(idade);
             candidatoData.Add(sexo);
             candidatoData.Add(numeBi);
             gravarficheiro stream = new gravarficheiro();

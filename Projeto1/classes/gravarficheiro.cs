@@ -14,7 +14,8 @@ namespace Projeto1.classes
         {
             StreamReader streamread = new StreamReader(@".\file.txt");
             var textStream = streamread.ReadToEnd();
-            this.id = textStream.Length;
+            string[] Split = textStream.Split(' '); 
+            this.id = Split.Length;
             streamread.Dispose();
         }
         public void RecordFile()
@@ -26,12 +27,12 @@ namespace Projeto1.classes
             var path = @".\file.txt";
             ConvertId _id = new ConvertId();
             StreamWriter ficheiro = new StreamWriter(path, true, Encoding.Default);
-            ficheiro.Write((_id.IDVerific(id.ToString()) + 1) + " ");
+            ficheiro.Write((_id.IDVerific(id.ToString()) + 1) + "-");
             foreach (var item in inscrever)
             {
-                ficheiro.Write(item +" ");
+                ficheiro.Write(item +";");
             }
-            ficheiro.Write("\n");
+            ficheiro.Write(" \n");
             ficheiro.Dispose();
         }
     }

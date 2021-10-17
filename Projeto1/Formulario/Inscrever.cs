@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Projeto1.classes.Inscrever;
 
 namespace Projeto1.Formulario
 {
@@ -41,8 +42,20 @@ namespace Projeto1.Formulario
 
         private void inscreverbtn_Click(object sender, EventArgs e)
         {
-            InscreverClass inscrever = new InscreverClass();
-            inscrever.inscreve(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text);
+            var dialogChange = MessageBox.Show("Inscrever Candidatos", "Deseja inscrever este candidato?", MessageBoxButtons.OKCancel);
+            if (dialogChange.Equals(DialogResult.OK))
+            {
+                ValidateData validate = new ValidateData();
+                validate.ValidateStringEmpty(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text, nBItxt.Text);
+                ClearInputs();
+            }
+        }
+        private void ClearInputs()
+        {
+            nametxt.Text = "";
+            lastNametxt.Text = "";
+            cursotxt.Text = "";
+            nBItxt.Text = "";
         }
     }
 }
