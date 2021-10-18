@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Projeto1.classes.Inscrever;
 
 namespace Projeto1.classes
 {
@@ -12,11 +13,8 @@ namespace Projeto1.classes
         protected long id { get; set; }
         public gravarficheiro()
         {
-            StreamReader streamread = new StreamReader(@".\file.txt");
-            var textStream = streamread.ReadToEnd();
-            string[] Split = textStream.Split(' '); 
-            this.id = Split.Length;
-            streamread.Dispose();
+            ManipulandoId manipulandoId = new ManipulandoId();
+            this.id = manipulandoId.GerarId();
         }
         public void RecordFile()
         {

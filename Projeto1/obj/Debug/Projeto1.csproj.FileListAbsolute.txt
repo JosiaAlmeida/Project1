@@ -19,3 +19,4 @@ E:\Projeto1\Projeto1\obj\Debug\Projeto1.csproj.CoreCompileInputs.cache
 E:\Projeto1\Projeto1\obj\Debug\Projeto1.exe
 E:\Projeto1\Projeto1\obj\Debug\Projeto1.pdb
 E:\Projeto1\Projeto1\obj\Debug\Projeto1.Formulario.Inscrever.resources
+E:\Projeto1\Projeto1\obj\Debug\Projeto1.Formulario.Consultar.resources

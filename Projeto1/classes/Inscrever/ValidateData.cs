@@ -21,6 +21,7 @@ namespace Projeto1.classes.Inscrever
         public void ValidateStringEmpty(string name, string lastName, string Cours, string yearsOld, string sexo, string numeroBi)
         {
             InscreverClass inscrever = new InscreverClass();
+            ConvertId _id = new ConvertId();
             try
             {
                 if (!name.Contains(" ") && !lastName.Contains(" ") && Cours.Length >= 1 && !numeroBi.Contains(" "))
