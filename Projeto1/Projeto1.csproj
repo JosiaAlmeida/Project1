@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Consultar\SearchCandidato.cs" />
     <Compile Include="classes\ConvertId.cs" />
     <Compile Include="classes\gravarficheiro.cs" />
     <Compile Include="classes\Inscrever\Inscrever.cs" />

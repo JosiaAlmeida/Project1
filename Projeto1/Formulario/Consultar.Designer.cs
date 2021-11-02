@@ -37,6 +37,11 @@ namespace Projeto1.Formulario
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.nameTxt = new System.Windows.Forms.TextBox();
+            this.cursoTxt = new System.Windows.Forms.TextBox();
+            this.NumeroBiTxt = new System.Windows.Forms.TextBox();
+            this.IdadeTxt = new System.Windows.Forms.TextBox();
+            this.SexoTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SearchBtn
@@ -49,6 +54,7 @@ namespace Projeto1.Formulario
             this.SearchBtn.TabIndex = 0;
             this.SearchBtn.Text = "Buscar Candidato";
             this.SearchBtn.UseVisualStyleBackColor = false;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // label1
             // 
@@ -111,11 +117,51 @@ namespace Projeto1.Formulario
             this.label6.TabIndex = 7;
             this.label6.Text = "Sexo";
             // 
+            // nameTxt
+            // 
+            this.nameTxt.Location = new System.Drawing.Point(305, 41);
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.Size = new System.Drawing.Size(100, 20);
+            this.nameTxt.TabIndex = 8;
+            // 
+            // cursoTxt
+            // 
+            this.cursoTxt.Location = new System.Drawing.Point(305, 69);
+            this.cursoTxt.Name = "cursoTxt";
+            this.cursoTxt.Size = new System.Drawing.Size(100, 20);
+            this.cursoTxt.TabIndex = 9;
+            // 
+            // NumeroBiTxt
+            // 
+            this.NumeroBiTxt.Location = new System.Drawing.Point(305, 95);
+            this.NumeroBiTxt.Name = "NumeroBiTxt";
+            this.NumeroBiTxt.Size = new System.Drawing.Size(100, 20);
+            this.NumeroBiTxt.TabIndex = 10;
+            // 
+            // IdadeTxt
+            // 
+            this.IdadeTxt.Location = new System.Drawing.Point(305, 121);
+            this.IdadeTxt.Name = "IdadeTxt";
+            this.IdadeTxt.Size = new System.Drawing.Size(100, 20);
+            this.IdadeTxt.TabIndex = 11;
+            // 
+            // SexoTxt
+            // 
+            this.SexoTxt.Location = new System.Drawing.Point(305, 148);
+            this.SexoTxt.Name = "SexoTxt";
+            this.SexoTxt.Size = new System.Drawing.Size(100, 20);
+            this.SexoTxt.TabIndex = 12;
+            // 
             // Consultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 265);
+            this.ClientSize = new System.Drawing.Size(435, 265);
+            this.Controls.Add(this.SexoTxt);
+            this.Controls.Add(this.IdadeTxt);
+            this.Controls.Add(this.NumeroBiTxt);
+            this.Controls.Add(this.cursoTxt);
+            this.Controls.Add(this.nameTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -141,5 +187,10 @@ namespace Projeto1.Formulario
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox nameTxt;
+        private System.Windows.Forms.TextBox cursoTxt;
+        private System.Windows.Forms.TextBox NumeroBiTxt;
+        private System.Windows.Forms.TextBox IdadeTxt;
+        private System.Windows.Forms.TextBox SexoTxt;
     }
 }
