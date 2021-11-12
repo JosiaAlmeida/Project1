@@ -1,4 +1,30 @@
-1-Josia;Almeida;Informatica;18;Masculino;12222AL
-2-aaaas;asaaa;ddsfa;12;Masculino;121233aa; 
-3-Josia;Almeida;Informatica;12;Masculino;332111AL; 
-4-aaaa;ssss;aadds ddsds;12;Masculino;qwwqa; 
+0 0 0 
+4-Almeida;Somalas;Mecanica;12;M;123AL34 
+5-Almeida;Somalas;Mecanica;12;F;123AL34 
+6-Almeida;Somalas;Mecanica;12;F;123AL34 
+7-Almeida;Somalas;Mecanica;12;F;123AL34 
+8-Almeida;Somalas;Mecanica;12;F;123AL34 
+1-Almeida;All;Info;12;M;123AL34 
+2-Almeida;Somalas;Mecanica;12;F;123AL34 
+3-Almeida;Somalas;Mecanica;12;F;123AL34 
+4-Almeida;Somalas;Mecanica;12;M;123AL34 
+5-Almeida;Somalas;Mecanica;12;F;123AL34 
+6-Almeida;Somalas;Mecanica;12;F;123AL34 
+7-Almeida;Somalas;Mecanica;12;F;123AL34 
+8-Almeida;Somalas;Mecanica;12;F;123AL34 
+1-Almeida;All;Info;12;M;123AL34 
+2-Almeida;Somalas;Mecanica;12;F;123AL34 
+3-Almeida;Somalas;Mecanica;12;F;123AL34 
+4-Almeida;Somalas;Mecanica;12;M;123AL34 
+5-Almeida;Somalas;Mecanica;12;F;123AL34 
+6-Almeida;Somalas;Mecanica;12;F;123AL34 
+7-Almeida;Somalas;Mecanica;12;F;123AL34 
+8-Almeida;Somalas;Mecanica;12;F;123AL34 
+1-Almeida;All;Info;12;M;123AL34 
+2-Almeida;Somalas;Mecanica;12;F;123AL34 
+3-Almeida;Somalas;Mecanica;12;F;123AL34 
+4-Almeida;Somalas;Mecanica;12;M;123AL34 
+5-Almeida;Somalas;Mecanica;12;F;123AL34 
+6-Almeida;Somalas;Mecanica;12;F;123AL34 
+7-Almeida;Somalas;Mecanica;12;F;123AL34 
+8-Almeida;Somalas;Mecanica;12;F;123AL34   

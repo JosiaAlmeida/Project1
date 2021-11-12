@@ -42,13 +42,6 @@ namespace Projeto1.Formulario
 
         private void inscreverbtn_Click(object sender, EventArgs e)
         {
-            var dialogChange = MessageBox.Show("Inscrever Candidatos", "Deseja inscrever este candidato?", MessageBoxButtons.OKCancel);
-            if (dialogChange.Equals(DialogResult.OK))
-            {
-                ValidateData validate = new ValidateData();
-                validate.ValidateStringEmpty(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text, nBItxt.Text);
-                ClearInputs();
-            }
         }
         private void ClearInputs()
         {
@@ -56,6 +49,17 @@ namespace Projeto1.Formulario
             lastNametxt.Text = "";
             cursotxt.Text = "";
             nBItxt.Text = "";
+        }
+
+        private void inscreverbtn_Click_1(object sender, EventArgs e)
+        {
+            var dialogChange = MessageBox.Show("Inscrever Candidatos", "Deseja inscrever este candidato?", MessageBoxButtons.OKCancel);
+            if (dialogChange.Equals(DialogResult.OK))
+            {
+                ValidateData validate = new ValidateData();
+                validate.ValidateStringEmpty(nametxt.Text, lastNametxt.Text, cursotxt.Text, idadeDUP.Text, sexoDUP.Text, nBItxt.Text);
+                ClearInputs();
+            }
         }
     }
 }
