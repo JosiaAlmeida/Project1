@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Projeto1.Formulario;
+using Projeto1.Repository;
+using Projeto1.Model;
 
 namespace Projeto1
 {
@@ -19,69 +21,28 @@ namespace Projeto1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void Consultarbtn_Click(object sender, EventArgs e)
+        private void Entrarbtn_Click(object sender, EventArgs e)
         {
-        }
-
-        private void Listarbtn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Eliminarbtn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Atualizarbtn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Estatisticabtn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Inscreverbtn_Click(object sender, EventArgs e)
-        {
-            Inscrever inscrever = new Inscrever();
-            inscrever.Show();
-        }
-
-        private void ConsultarBtn_Click_1(object sender, EventArgs e)
-        {
-            Consultar consultar = new Consultar();
-            consultar.Show();
-        }
-
-        private void ListarBtn_Click_1(object sender, EventArgs e)
-        {
-            Listar listar = new Listar();
-            listar.Show();
-        }
-
-        private void EliminarBtn_Click_1(object sender, EventArgs e)
-        {
-            Eliminar eliminar = new Eliminar();
-            eliminar.Show();
-        }
-
-        private void EstatisticaBtn_Click_1(object sender, EventArgs e)
-        {
-            Estatistica estatistica = new Estatistica();
-            estatistica.Show();
-        }
-
-        private void IntegrantesBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AtualizarBtn_Click_1(object sender, EventArgs e)
-        {
-            Atualizar atualizar = new Atualizar();
-            atualizar.Show();
+            FuncionarioRepository funcionario = new FuncionarioRepository();
+            if (nomeTxt.Text.Length > 0
+                && salarioTxt.Text.Length > 0
+                && telefoneTxt.Text.Length > 0)
+            {
+                funcionario.Cadastrar(new Funcionario(nomeTxt.Text, salarioTxt.Text, telefoneTxt.Text, idadeDp.selectedValue));
+                var dialog = MessageBox.Show("Deseja Ver Dados Do Funcionario?", "Notificação",MessageBoxButtons.YesNo);
+                if (dialog.Equals(DialogResult.Yes))
+                {
+                    DadosFuncionario dadosFuncionario = new DadosFuncionario();
+                    dadosFuncionario.Show();
+                }
+                else
+                {
+                    Menu menu = new Menu();
+                    menu.Show();
+                }
+            }
+            else MessageBox.Show("Por favor, Preencha os espaços em branco", "Falha de login");
         }
     }
 }

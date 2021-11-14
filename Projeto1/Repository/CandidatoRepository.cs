@@ -25,8 +25,9 @@ namespace Projeto1.Repository
             StreamReader streamread = new StreamReader(path);
             List<string> candidatos1 = new List<string>();
             string candidatos = streamread.ReadToEnd();
+            string[] Split = candidatos.Split(' ');
             streamread.Dispose();
-            foreach(var item in candidatos)
+            foreach(var item in Split)
             {
                 candidatos1.Add(item.ToString());
             }

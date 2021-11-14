@@ -29,100 +29,173 @@ namespace Projeto1.Formulario
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.GridViewGV = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Idade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumeroDoBi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.GridViewGV)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.listId = new System.Windows.Forms.ListBox();
+            this.listNome = new System.Windows.Forms.ListBox();
+            this.listCurso = new System.Windows.Forms.ListBox();
+            this.listSexo = new System.Windows.Forms.ListBox();
+            this.listNBI = new System.Windows.Forms.ListBox();
+            this.listIdade = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // GridViewGV
+            // label1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.GridViewGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.GridViewGV.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.GridViewGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GridViewGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridViewGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.GridViewGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridViewGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nome,
-            this.Curso,
-            this.Idade,
-            this.NumeroDoBi,
-            this.Sexo});
-            this.GridViewGV.DoubleBuffered = true;
-            this.GridViewGV.EnableHeadersVisualStyles = false;
-            this.GridViewGV.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.GridViewGV.HeaderForeColor = System.Drawing.Color.Honeydew;
-            this.GridViewGV.Location = new System.Drawing.Point(1, 12);
-            this.GridViewGV.Name = "GridViewGV";
-            this.GridViewGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.GridViewGV.Size = new System.Drawing.Size(518, 380);
-            this.GridViewGV.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(96, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome";
             // 
-            // Nome
+            // label2
             // 
-            this.Nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Width = 67;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(245, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Curso";
             // 
-            // Curso
+            // label3
             // 
-            this.Curso.HeaderText = "Curso";
-            this.Curso.Name = "Curso";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "ID";
             // 
-            // Idade
+            // label4
             // 
-            this.Idade.HeaderText = "Idade";
-            this.Idade.Name = "Idade";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(370, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Sexo";
             // 
-            // NumeroDoBi
+            // label5
             // 
-            this.NumeroDoBi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.NumeroDoBi.HeaderText = "Numero Do BI";
-            this.NumeroDoBi.Name = "NumeroDoBi";
-            this.NumeroDoBi.Width = 111;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(448, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Nº Do BI";
             // 
-            // Sexo
+            // label6
             // 
-            this.Sexo.HeaderText = "Sexo";
-            this.Sexo.Name = "Sexo";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(598, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 25);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Idade";
+            // 
+            // listId
+            // 
+            this.listId.FormattingEnabled = true;
+            this.listId.Location = new System.Drawing.Point(13, 52);
+            this.listId.Name = "listId";
+            this.listId.Size = new System.Drawing.Size(82, 316);
+            this.listId.TabIndex = 6;
+            // 
+            // listNome
+            // 
+            this.listNome.FormattingEnabled = true;
+            this.listNome.Location = new System.Drawing.Point(101, 52);
+            this.listNome.Name = "listNome";
+            this.listNome.Size = new System.Drawing.Size(143, 316);
+            this.listNome.TabIndex = 7;
+            // 
+            // listCurso
+            // 
+            this.listCurso.FormattingEnabled = true;
+            this.listCurso.Location = new System.Drawing.Point(250, 52);
+            this.listCurso.Name = "listCurso";
+            this.listCurso.Size = new System.Drawing.Size(119, 316);
+            this.listCurso.TabIndex = 8;
+            // 
+            // listSexo
+            // 
+            this.listSexo.FormattingEnabled = true;
+            this.listSexo.Location = new System.Drawing.Point(375, 52);
+            this.listSexo.Name = "listSexo";
+            this.listSexo.Size = new System.Drawing.Size(72, 316);
+            this.listSexo.TabIndex = 9;
+            // 
+            // listNBI
+            // 
+            this.listNBI.FormattingEnabled = true;
+            this.listNBI.Location = new System.Drawing.Point(453, 52);
+            this.listNBI.Name = "listNBI";
+            this.listNBI.Size = new System.Drawing.Size(144, 316);
+            this.listNBI.TabIndex = 10;
+            // 
+            // listIdade
+            // 
+            this.listIdade.FormattingEnabled = true;
+            this.listIdade.Location = new System.Drawing.Point(603, 52);
+            this.listIdade.Name = "listIdade";
+            this.listIdade.Size = new System.Drawing.Size(89, 316);
+            this.listIdade.TabIndex = 11;
             // 
             // Listar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(520, 389);
-            this.Controls.Add(this.GridViewGV);
+            this.ClientSize = new System.Drawing.Size(704, 389);
+            this.Controls.Add(this.listIdade);
+            this.Controls.Add(this.listNBI);
+            this.Controls.Add(this.listSexo);
+            this.Controls.Add(this.listCurso);
+            this.Controls.Add(this.listNome);
+            this.Controls.Add(this.listId);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "Listar";
             this.Text = "Listar";
             this.Load += new System.EventHandler(this.Listar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.GridViewGV)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid GridViewGV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Curso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Idade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroDoBi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listId;
+        private System.Windows.Forms.ListBox listNome;
+        private System.Windows.Forms.ListBox listCurso;
+        private System.Windows.Forms.ListBox listSexo;
+        private System.Windows.Forms.ListBox listNBI;
+        private System.Windows.Forms.ListBox listIdade;
     }
 }

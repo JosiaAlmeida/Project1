@@ -15,18 +15,31 @@ namespace Projeto1.Formulario
     {
         public Listar()
         {
-            this.ShowList();
             InitializeComponent();
+            this.ShowList();
         }
         public void ShowList()
         {
             CandidatoRepository candidato = new CandidatoRepository();
-            var ListData = candidato.Listar();
-            List<string> candidatos1 = new List<string>();
-            foreach (var item in ListData)
+            int ContID = 0;
+            foreach (var item in candidato.Listar())
             {
-                candidatos1.Add(item.Replace("-", " ").Replace(";", " "));
-                GridViewGV.Rows.Add(item);
+                string[] Split = item.Replace(";"," ").Replace("-"," ").Split(' ');
+                if(Split.Length<=1 && Split[0]=="0" 
+                    || Split.Length <= 1 && Split[0] == "0 "
+                    || Split.Length <= 1)
+                {
+                }
+                else
+                {
+                    ContID++;
+                   listId.Items.Add(ContID);
+                   listNome.Items.Add(Split[1] + " " + Split[2]);
+                   listCurso.Items.Add(Split[3].ToString());
+                   listIdade.Items.Add(Split[4].ToString());
+                   listSexo.Items.Add(Split[5].ToString());
+                   listNBI.Items.Add(Split[6].ToString());
+                }
             }
             
         }
